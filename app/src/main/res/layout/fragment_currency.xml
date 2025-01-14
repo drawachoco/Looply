@@ -1,0 +1,106 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select:"
+        android:fontFamily="@font/fredoka_semibold"
+        android:textSize="20sp"
+        android:textColor="@color/deepnavy"/>
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/spCountry1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/coralpink"/>
+
+    <Spinner
+        android:id="@+id/spCountry2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/coralpink"/>
+
+    <EditText
+        android:id="@+id/etInputNominal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Insert nominal"
+        android:fontFamily="@font/fredoka_medium"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="@color/deepnavy"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/coralpink"
+        android:fontFamily="@font/fredoka_semibold"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/linearHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvTitleHasil"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="24dp"
+            android:textColor="@color/deepnavy"
+            android:fontFamily="@font/fredoka_bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvCurrencyFrom"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nominal Input: "
+            android:textSize="20dp"
+            android:textColor="@color/deepnavy"
+            android:fontFamily="@font/fredoka_medium"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvCurrencyTo"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Conversion Result: "
+            android:textSize="20dp"
+            android:textColor="@color/deepnavy"
+            android:fontFamily="@font/fredoka_medium"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvDateNow"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/deepnavy"
+            android:fontFamily="@font/fredoka_medium"
+            android:text="Last Update: " />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/lightcream">
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/looplylogo2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Login"
+        android:fontFamily="@font/fredoka_bold"
+        android:textColor="@color/coralpink"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:id="@+id/ly4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="60dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_below="@id/loginText">
+
+        <EditText
+            android:id="@+id/usernameLoginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/textfield"
+            android:hint="Enter your email"
+            android:fontFamily="@font/fredoka"
+            android:padding="15dp"
+            android:textColorHint="@color/coralpink"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/passwordLoginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textfield"
+            android:hint="Enter your password"
+            android:fontFamily="@font/fredoka"
+            android:padding="15dp"
+            android:textColorHint="@color/coralpink"
+            android:textSize="16sp"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="253dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ly4"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/coralpink"
+        android:text="Log In"
+        android:fontFamily="@font/fredoka_bold"
+        android:textColor="@color/lightcream" />
+
+    <LinearLayout
+        android:id="@+id/ly5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="@color/deepnavy"
+            android:textSize="14sp"
+            android:fontFamily="@font/fredoka" />
+
+        <TextView
+            android:id="@+id/signupTextLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Sign Up"
+            android:textColor="@color/deepnavy"
+            android:textSize="14sp"
+            android:fontFamily="@font/fredoka_bold" />
+    </LinearLayout>
+</RelativeLayout>

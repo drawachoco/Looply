@@ -1,0 +1,71 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatFragment"
+    android:background="@android:color/white">
+
+    <!-- Toolbar untuk menampilkan nama kontak -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarChat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/coralpink"
+        android:elevation="4dp"
+        android:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- RecyclerView untuk menampilkan pesan -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/layoutInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarChat"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+    <!-- Input layout -->
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="100dp"
+        android:background="@color/lightcream"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Input pesan -->
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Type a message"
+            android:padding="12dp"
+            android:background="@color/coralpink"
+            android:layout_marginEnd="8dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/lightcream"
+            android:fontFamily="@font/fredoka" />
+
+        <!-- Tombol kirim -->
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/send"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Send Message" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

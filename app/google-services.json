@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "299725066029",
+    "project_id": "looply-v1",
+    "storage_bucket": "looply-v1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299725066029:android:ebfbb7604f0274e75fcda4",
+        "android_client_info": {
+          "package_name": "com.example.looply"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr0trQoMCrBfN_IVL1o6CFRAWHFYd_kQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

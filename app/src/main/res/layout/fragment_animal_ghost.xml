@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimalGhostFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_gravity="center"
+                android:layout_width="356dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/youtubeghost"
+                app:videoId="hZYfeGLbwy0"
+                app:autoPlay="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Animal Ghosts Crochet Tutorial"
+                android:fontFamily="@font/fredoka_bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="24dp"
+                android:textColor="@color/deepnavy"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Hi everyone! In this video, I am going to show you how to crochet cute Soot sprites in the movie Spirited away. Hope you like it! 💕  \n\nThe yarn I used to crochet these soot is Milk cotton 125g (5 ply) , no. 02, 03, 20, 25, 37, 2.5mm crochet hook. \nHave a nice time and nice crochet! \n\nPattern: by Autumny Crochet \n\n❌ You are NOT permitted to reup my videos.
+\n🌱 You can sell the finished products, giving me a credit as the pattern designer. \n\nThank you 💕"
+                android:fontFamily="@font/fredoka"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textColor="@color/deepnavy"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

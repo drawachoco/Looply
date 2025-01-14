@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/lightcream"
+    tools:context=".UpdateProjectFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/editProjectHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Project"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/deepnavy"
+        android:textSize="24dp"
+        android:fontFamily="@font/fredoka_semibold"
+        />
+
+    <ImageView
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/check"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/editProjectHeading"
+        android:layout_marginEnd="6dp"
+        app:tint="@color/deepnavy"/>
+
+    <EditText
+        android:id="@+id/updateTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter the title"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/editProjectHeading"
+        android:background="@drawable/pink_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/fredoka_light"/>
+
+    <EditText
+        android:id="@+id/updateDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Enter the Start date"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/updateTitleEditText"
+        android:background="@drawable/pink_border"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/fredoka_light"/>
+
+    <EditText
+        android:id="@+id/updateNoteEditText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Write notes here"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/updateDateEditText"
+        android:background="@drawable/pink_border"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/fredoka_light"/>
+
+</RelativeLayout>

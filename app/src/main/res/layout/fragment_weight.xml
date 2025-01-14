@@ -1,0 +1,95 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Weight Units:"
+        android:fontFamily="@font/fredoka_semibold"
+        android:textSize="20sp"
+        android:textColor="@color/deepnavy"/>
+
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/spWeightFrom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/coralpink"/>
+
+    <Spinner
+        android:id="@+id/spWeightTo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/coralpink"/>
+
+    <EditText
+        android:id="@+id/etInputWeight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Insert weight"
+        android:fontFamily="@font/fredoka_medium"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="@color/deepnavy"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnConvertWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/coralpink"
+        android:fontFamily="@font/fredoka_semibold"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/linearResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvTitleResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textColor="@color/deepnavy"
+            android:fontFamily="@font/fredoka_bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvWeightFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Weight: "
+            android:textColor="@color/deepnavy"
+            android:fontFamily="@font/fredoka_bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvWeightTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Converted Weight: "
+            android:textColor="@color/deepnavy"
+            android:fontFamily="@font/fredoka_bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvDateNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/deepnavy"
+            android:fontFamily="@font/fredoka_bold"
+            android:text="Last Update: " />
+    </LinearLayout>
+
+</LinearLayout>

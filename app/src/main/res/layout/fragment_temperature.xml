@@ -1,0 +1,95 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Temperature Unit:"
+        android:fontFamily="@font/fredoka_semibold"
+        android:textSize="20sp"
+        android:textColor="@color/deepnavy"/>
+
+    <Spinner
+        android:id="@+id/spFromUnit"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/coralpink"/>
+
+    <Spinner
+        android:id="@+id/spToUnit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/coralpink"/>
+
+    <EditText
+        android:id="@+id/etTemperatureInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Insert temperature"
+        android:fontFamily="@font/fredoka_medium"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="@color/deepnavy"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/coralpink"
+        android:fontFamily="@font/fredoka_semibold"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/linearResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvResultTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textColor="@color/deepnavy"
+            android:fontFamily="@font/fredoka_bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvTemperatureInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Temperature: "
+            android:textColor="@color/deepnavy"
+            android:fontFamily="@font/fredoka_bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvConvertedTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Converted Temperature: "
+            android:textColor="@color/deepnavy"
+            android:fontFamily="@font/fredoka_bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvLastUpdated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/deepnavy"
+            android:fontFamily="@font/fredoka_bold"
+            android:text="Last Update: " />
+    </LinearLayout>
+
+</LinearLayout>
